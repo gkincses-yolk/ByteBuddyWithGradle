@@ -2,12 +2,26 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
-      <profile name="Maven default annotation processors profile" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <module name="core-main" />
-      </profile>
+      <profile default="true" name="Default" enabled="true" />
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="bytebuddy-codegen-gradle.app.main" target="11" />
+      <module name="bytebuddy-codegen-gradle.app.test" target="11" />
+      <module name="bytebuddy-codegen-gradle.untitle" target="11" />
+      <module name="bytebuddy-codegen-gradle.untitle.main" target="11" />
+      <module name="bytebuddy-codegen-gradle.untitle.test" target="11" />
+      <module name="core-main" target="11" />
+      <module name="core-main.main" target="11" />
+      <module name="core-main.test" target="11" />
+      <module name="digital.yolk.bytebuddy-codegen-gradle" target="11" />
+      <module name="digital.yolk.bytebuddy-codegen-gradle.main" target="11" />
+      <module name="digital.yolk.bytebuddy-codegen-gradle.test" target="11" />
+      <module name="extension-points" target="11" />
+      <module name="extension-points.bytebuddy-codegen-gradle" target="11" />
+      <module name="extension-points.bytebuddy-codegen-gradle.main" target="11" />
+      <module name="extension-points.bytebuddy-codegen-gradle.test" target="11" />
+      <module name="extension-points.main" target="11" />
+      <module name="extension-points.test" target="11" />
+    </bytecodeTargetLevel>
   </component>
 </project>

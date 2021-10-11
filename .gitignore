@@ -1,2 +1,7 @@
 build
+.gradle
+target
+**/build
+**/.gradle
+**/target
 .idea/vcs.xml
