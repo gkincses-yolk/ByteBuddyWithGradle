@@ -38,6 +38,11 @@
             <artifactId>byte-buddy-maven-plugin</artifactId>
             <version>1.11.8</version>
         </dependency>
+        <dependency>
+            <groupId>digital.yolk</groupId>
+            <artifactId>extension-points</artifactId>
+            <version>0.1-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -56,7 +61,7 @@
                 <configuration>
                     <transformations>
                         <transformation>
-                            <plugin>net.bytebuddy.test.SimplePlugin</plugin>
+                            <plugin>digital.yolk.TransformerPlugin</plugin>
                         </transformation>
                     </transformations>
                 </configuration>

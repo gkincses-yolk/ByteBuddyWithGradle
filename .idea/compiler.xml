@@ -3,14 +3,6 @@
   <component name="CompilerConfiguration">
     <annotationProcessing>
       <profile default="true" name="Default" enabled="true" />
-      <profile name="Maven default annotation processors profile" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <module name="bytebuddy-codegen-gradle.app" />
-        <module name="bytebuddy-codegen-gradle.extension-points" />
-        <module name="bytebuddy-codegen-gradle.core-main" />
-      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="bytebuddy-codegen-gradle.untitle" target="11" />
