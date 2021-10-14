@@ -13,8 +13,6 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="bytebuddy-codegen-gradle.app.main" target="11" />
-      <module name="bytebuddy-codegen-gradle.app.test" target="11" />
       <module name="bytebuddy-codegen-gradle.untitle" target="11" />
       <module name="bytebuddy-codegen-gradle.untitle.main" target="11" />
       <module name="bytebuddy-codegen-gradle.untitle.test" target="11" />
@@ -22,6 +20,8 @@
       <module name="core-main.main" target="11" />
       <module name="core-main.test" target="11" />
       <module name="digital.yolk.bytebuddy-codegen-gradle" target="11" />
+      <module name="digital.yolk.bytebuddy-codegen-gradle.app.main" target="11" />
+      <module name="digital.yolk.bytebuddy-codegen-gradle.app.test" target="11" />
       <module name="digital.yolk.bytebuddy-codegen-gradle.main" target="11" />
       <module name="digital.yolk.bytebuddy-codegen-gradle.test" target="11" />
       <module name="extension-points" target="11" />

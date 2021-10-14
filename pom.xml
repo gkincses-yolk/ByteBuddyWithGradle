@@ -15,8 +15,8 @@
     </properties>
 
     <modules>
-        <module>app</module>
-        <module>core-main</module>
         <module>extension-points</module>
+        <module>core-main</module>
+        <module>app</module>
     </modules>
 </project>
