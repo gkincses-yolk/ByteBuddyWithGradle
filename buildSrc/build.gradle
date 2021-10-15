@@ -1,31 +1,23 @@
 plugins {
     id 'java'
-    id 'com.github.johnrengelman.shadow' version '7.1.0'
 }
-
-group 'digital.yolk'
-version '0.1-SNAPSHOT'
 
 repositories {
     mavenCentral()
 }
 
+sourceSets {
+    main.java.srcDirs = [ 'src/main/java' ]
+}
+
 dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
-    implementation  project(path: ':core-main')
-    implementation  project(path: ':extension-points')
-    implementation  project(path: ':app')
     implementation 'org.projectlombok:lombok:1.18.12'
     implementation 'ch.qos.logback:logback-classic:1.2.3'
+    implementation 'net.bytebuddy:byte-buddy:1.11.8'
 }
 
 test {
     useJUnitPlatform()
-}
-
-jar {
-    manifest {
-        attributes 'Main-Class': 'MyApp'
-    }
 }

@@ -21,7 +21,7 @@ public class TransformerPlugin implements Plugin {
 
     @Override
     public DynamicType.Builder<?> apply(DynamicType.Builder<?> builder, TypeDescription typeDescription, ClassFileLocator classFileLocator) {
-        return builder.modifiers(ModifierContributor.ForType.EMPTY_MASK | Opcodes.ACC_PUBLIC).method(ElementMatchers.named("toMyString")).intercept(FixedValue.value("Hello World!!!"));
+        return builder.modifiers(ModifierContributor.ForType.EMPTY_MASK | Opcodes.ACC_PUBLIC).method(ElementMatchers.named("toMyString")).intercept(FixedValue.value("Hello World!!!!"));
     }
 
     @Override

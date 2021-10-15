@@ -2,7 +2,7 @@ import digital.yolk.TransformerPlugin
 
 plugins {
     id 'java'
-    id 'com.github.johnrengelman.shadow'
+    id 'com.github.johnrengelman.shadow' version '7.1.0'
     id 'net.bytebuddy.byte-buddy-gradle-plugin' version '1.11.20'
 }
 
@@ -20,11 +20,10 @@ sourceSets {
 dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
-    implementation 'net.bytebuddy:byte-buddy:1.11.8'
     implementation 'org.projectlombok:lombok:1.18.12'
     implementation 'ch.qos.logback:logback-classic:1.2.3'
-    implementation ':extension-points'
-    implementation 'net.bytebuddy.byte-buddy-gradle-plugin:1.11.20'
+//    implementation  project(path: ':extension-points', configuration: 'shadow')
+    implementation 'net.bytebuddy:byte-buddy-gradle-plugin:1.11.20'
 }
 
 test {
