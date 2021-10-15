@@ -1,3 +1,5 @@
+import digital.yolk.TransformerPlugin
+
 plugins {
     id 'java'
     id 'com.github.johnrengelman.shadow'
@@ -21,7 +23,8 @@ dependencies {
     implementation 'net.bytebuddy:byte-buddy:1.11.8'
     implementation 'org.projectlombok:lombok:1.18.12'
     implementation 'ch.qos.logback:logback-classic:1.2.3'
-    implementation  project(path: ':extension-points', configuration: 'shadow')
+    implementation ':extension-points'
+    implementation 'net.bytebuddy.byte-buddy-gradle-plugin:1.11.20'
 }
 
 test {
@@ -36,7 +39,7 @@ jar {
 
 byteBuddy {
     transformation {
-        plugin = digital.yolk.TransformerPlugin.class
+        plugin = TransformerPlugin.class
     }
 }
 
